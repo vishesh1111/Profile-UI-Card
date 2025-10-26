@@ -7,13 +7,14 @@
     <link
       rel="stylesheet"
       href="styles.css"
-      <link
+    />
+    <link
       rel="stylesheet"
       href="./reset.css"
     />
     <title>Profile UI Card</title>
   </head>
-  <body style="overflow: hidden">
+  <body>
     <div class="profile-card">
       <figure class="profile-card__img">
         <img
@@ -24,15 +25,8 @@
 
       <div class="profile-card__desc">
         <h1>Vishesh Verma</h1>
-        <p style="font-size: 40px; opacity: 0.9">Full-stack Devloper</p>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            justify-content: center;
-          "
-        >
+        <p class="profile-card__subtitle">Full-stack Devloper</p>
+        <div class="profile-card__location">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-map-pin"
@@ -55,23 +49,23 @@
         </div>
       </div>
 
-      <div class="profile-card__info" style="opacity: 0.7">
+      <div class="profile-card__info">
         <div>
           <div>456</div>
           <div>Followers</div>
         </div>
 
-        <div style="font-size: 16px; opacity: 0.7">
+        <div>
           <div>12</div>
           <div>Refrences</div>
         </div>
       </div>
 
       <div class="profile-card__socials">
-        <a href="#" class="Twitter">
+        <a href="https://vishesh1111.github.io/ReactPortfolio/" class="Portfolio">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-twitter"
+            class="icon icon-tabler icon-tabler-briefcase"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -82,9 +76,10 @@
             stroke-linejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-            ></path>
+            <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+            <line x1="12" y1="12" x2="12" y2="12.01"></line>
+            <path d="M3 13a20 20 0 0 0 18 0"></path>
           </svg>
         </a>
         <a href="https://github.com/vishesh1111" class="Github">
@@ -106,10 +101,9 @@
             ></path>
           </svg>
         </a>
-        <a href="#" class="Facebook">
+        <a href="https://leetcode.com/u/vishesh53/" class="LeetCode">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-meta"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -120,19 +114,19 @@
             stroke-linejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z"
-            ></path>
-            <path
-              d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z"
-            ></path>
+            <rect x="4" y="4" width="4" height="4" rx="1"></rect>
+            <rect x="10" y="4" width="4" height="6" rx="1"></rect>
+            <rect x="16" y="4" width="4" height="8" rx="1"></rect>
+            <rect x="4" y="14" width="4" height="6" rx="1"></rect>
+            <rect x="10" y="14" width="4" height="10" rx="1"></rect>
+            <rect x="16" y="14" width="4" height="4" rx="1"></rect>
           </svg>
         </a>
 
-        <a href="#" class="Behance">
+        <a href="https://www.linkedin.com/in/vishesh-verma-016351202/" class="LinkedIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-behance"
+            class="icon icon-tabler icon-tabler-brand-linkedin"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -143,17 +137,18 @@
             stroke-linejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
-            <line x1="3" y1="12" x2="7.5" y2="12"></line>
-            <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
-            <line x1="16" y1="6" x2="19" y2="6"></line>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
           </svg>
         </a>
       </div>
 
       <div class="profile-card__actions">
-        <button class="blue">Send Message</button>
-        <button class="orange">Buy me a coffee</button>
+        <a href="mailto:vvishesh53@gmail.com" class="blue button-link">Send Message</a>
+        <a href="https://buymeacoffee.com/vvishesh53t" class="orange button-link">Buy me a coffee</a>
       </div>
     </div>
   </body>
